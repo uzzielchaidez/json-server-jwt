@@ -3,7 +3,7 @@
 El objetivo es crear un mock de una API Rest de eCommerce que haga uso de autenticación con JWT y cuente con algunas rutas protegidas.
 
 Para usarlo:
-1) Haz git clone del repositorio: `git clone https://github.com/warderer/json-server-jwt.git`
+1) Haz git clone del repositorio: `git clone https://github.com/uzzielchaidez/json-server-jwt.git`
 2) Desde la terminal, recuerda entrar a la carpeta del proyecto: `cd json-server-jwt`
 3) Instala las dependencias con el comando: `npm install`
 4) Ejecuta el servidor con el comando: `npm run start`
@@ -12,7 +12,7 @@ Para usarlo:
 Si lo deseas puedes hacer deployment de este repositorio en tu cuenta de Render:
 1) Crea una cuenta en [Render](https://render.com/) e inicia sesión.
 2) Una vez iniciada la sesión, ve a la página de "Dashboard", y luego ubica el apartado de "Web Services" y haz click en el botón "New Web Service".
-3) En la siguiente pantalla de "Create a New Service", utiliza la segunda opción "Public Web Repository", coloca en la casilla la url del repo de github (https://github.com/warderer/json-server-jwt) y haz click en el botón "Continue".
+3) En la siguiente pantalla de "Create a New Service", utiliza la segunda opción "Public Web Repository", coloca en la casilla la url del repo de github (https://github.com/uzzielchaidez/json-server-jwt) y haz click en el botón "Continue".
 4) En la siguiente pantalla de "You are deploying a web service for warderer/json-server-jwt" deberás rellenar la siguiente información:
    - **Name:** Nombre del proyecto, sin espacios ni carácteres especiales. Debe ser único ya que la url se generará a partir de esto.
    - **Region:** Ubicación físical del servidor. Elije el más cercano a tu ubicación o deja el valor por defecto.
@@ -42,7 +42,7 @@ Donde existen las rutas de `items` y de `users`
   "first_name": "Dr.",
   "last_name": "Strange",
   "gender": "M",
-  "email": "drstrange@marvel.com",
+  "email": "dr_strange@marvel.com",
   "password": "multiverso",
   "role": "CUSTOMER"
 }
@@ -56,7 +56,7 @@ El correo es único, si se repite devolverá error al intentar registrar uno ya 
 `/login`
 ```
 {
-  "email": "drstrange@marvel.com",
+  "email": "ironman@marvel.com",
   "password": "multiverso"
 }
 ```
@@ -127,7 +127,7 @@ Por defecto la API ya viene con 2 usuarios para poder comenzar a probar inmediat
 ### Usuario tipo "CUSTOMER"
 ```
 {
-  "email": "drstrange@marvel.com",
+  "email": "ironman@marvel.com",
   "password": "multiverso"
 }
 ```
